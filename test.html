@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #090a1a;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .btn {
+            background: #647bff;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #546eff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Chatbot Lander</h1>
+    <p>Experience an AI-powered chatbot that helps answer your questions instantly.</p>
+    <a href="#" class="btn">Get Started</a>
+
+    <!-- Chatbot Integration -->
+    <div id="chat-bubble">💬</div>
+    <div id="chat-wrapper">
+        <div id="chat-container"></div>
+        <div id="suggestions"></div>
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="How can I help you?">
+            <button id="btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Link Chatbot JavaScript -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
